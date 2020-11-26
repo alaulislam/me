@@ -1541,7 +1541,9 @@ html .btn, body .btn {
     z-index: 0; }
 #blog .odd {
     /*blog odd property*/
-    text-align: left; }
+    text-align: left; 
+    /* height: 300px; */
+}
 #blog .odd .image {
     float: left; }
 #blog .odd .image img {
@@ -1549,7 +1551,9 @@ html .btn, body .btn {
     top: 0; }
 #blog .even {
     /*blog even property*/
-    text-align: right; }
+    text-align: right; 
+    /* height: 300px; */
+}
 #blog .even .image {
     float: right; }
 #blog .even .image img {

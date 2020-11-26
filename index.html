@@ -32,11 +32,16 @@
     <link href="stylesheets/materialize.css" rel="stylesheet">
     <!-- BOOTSTRAP -->
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" rel="stylesheet"> -->
 
-
+    <link rel="stylesheet" href="stylesheets/bib-publication-list.css" type="text/css" />
     <!-- CUSTOM STYLE -->
     <!-- <link href="stylesheets/style.css" rel="stylesheet"> -->
     <link href="stylesheets/style_dark_gary.css" rel="stylesheet">
+    <link href="stylesheets/custom.css" rel="stylesheet">
+    <style>
+      /* #bibtex { display: block;} */
+    </style>
 
 </head>
 <body>
@@ -77,10 +82,11 @@
             <!--OPTIONS-->
             <a href="#home"><i class="title-icon fa fa-user"></i>Home</a>
             <a href="#about"><i class="title-icon fa fa-dashboard"></i>About</a>
-            <a href="#education"><i class="title-icon fa fa-graduation-cap"></i>Education</a>
-            <a href="#skills"><i class="title-icon fa fa-sliders"></i>Skills</a>
-            <a href="#experience"><i class="title-icon fa fa-suitcase"></i>Experience</a>
+            <a href="#publication"><i class="title-icon fa fa-book"></i>Publications</a>
             <a href="#blog"><i class="title-icon fa fa-pencil-square"></i>Projects</a>
+            <a href="#education"><i class="title-icon fa fa-graduation-cap"></i>Education</a>
+            <!-- <a href="#skills"><i class="title-icon fa fa-sliders"></i>Skills</a> -->
+            <a href="#experience"><i class="title-icon fa fa-suitcase"></i>Experience</a>
             <a href="#interest"><i class="title-icon fa fa-heart"></i>Interest</a>
             <!-- <a href="#contact"><i class="title-icon fa fa-envelope"></i>Contact</a> -->
         </div>
@@ -160,10 +166,9 @@
                                     <!-- LINKEDIN-->
                                     <a href="https://linkedin.com/in/mohammad-alaul-islam" target="_blank" class="social  btn-floating blue darken-3"><i
                                             class="fa fa-linkedin"></i></a>
-                                    <a href="https://github.com/alaulislam" class="social  btn-floating pink"><i
-                                        class="fa fa-github"></i></a>
-                                    <a href="https://www.reddit.com/user/alaul-asif" class="social  btn-floating red"><i
-                                        class="fa fa-reddit"></i></a>
+                                    <a href="https://github.com/alaulislam" target="_blank" class="social  btn-floating pink"><i class="fa fa-github"></i></a>
+                                    <a href="https://twitter.com/alaulislam_" target="_blank" class="social  btn-floating blue"><i class="fa fa-twitter"></i></a>
+                                    <!-- <a href="https://www.reddit.com/user/alaul-asif" target="_blank" class="social  btn-floating red"><i class="fa fa-reddit"></i></a> -->
 
                                 </div>
                             </div>
@@ -187,7 +192,7 @@
                     <div class="card-content">
                         <!-- ABOUT PARAGRAPH -->
                         <p>
-                            Hello! I’m Alaul Islam. I'm a PhD student at <a href="https://www.aviz.fr/" target="_blank"><span style="color: #2c6085;">AVIZ</span></a> research team, 
+                            Hi! I'm a PhD student at <a href="https://www.aviz.fr/" target="_blank"><span style="color: #2c6085;">AVIZ</span></a> research team, 
                             <a href="https://www.inria.fr/en" target="_blank"><span style="color: #2c6085;">INRIA</span></a> and 
                             <a href="https://www.universite-paris-saclay.fr/en" target="_blank"><span style="color: #2c6085;">Université Paris-Saclay</span></a> 
                             , supervised by <a href="https://petra.isenberg.cc/wiki/pmwiki.php" target="_blank"><span style="color: #2c6085;">Petra Isenberg. </span></a>
@@ -201,6 +206,7 @@
                         <div class="about-btn">
                             <!-- DOWNLOAD CV BUTTON -->
                             <a href="CV/Mohammad_Alaul_Islam_CV.pdf" target="_blank" class="btn waves-effect">Download MY CV</a>
+                            <figcaption class="figure-caption">Last update: Feb 2020</figcaption>
                             <!-- CONTACT BUTTON -->
                             <!-- <a href="#contact" class="btn waves-effect">Contact Me</a> -->
                         </div>
@@ -211,6 +217,167 @@
     </div>
 </div>
 
+<!--==========================================
+             PUBLICATIONS
+===========================================-->
+<section id="publication" class="section">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-suitcase"></i>Publications</h4>
+        </div>
+        <div class="card">
+            <table id="pubTable" class="display"></table>
+            <pre id="bibtex" style="display:none;">
+                @inproceedings{islam:hal-03005319,
+                    TITLE = {{Visualizing Information on Watch Faces: A Survey with Smartwatch Users}},
+                    AUTHOR = {Islam, Alaul and Bezerianos, Anastasia and Lee, Bongshin and Blascheck, Tanja and Isenberg, Petra},
+                    URL = {https://hal.inria.fr/hal-03005319},
+                    BOOKTITLE = {{Short Papers of the IEEE Conference on Visualization (VIS)}},
+                    ADDRESS = {Los Alamitos, CA, United States},
+                    SERIES = {Short Papers of the IEEE Conference on Visualization (VIS)},
+                    YEAR = {2020},
+                    MONTH = Oct,
+                    DOI = {10.1109/VIS47514.2020.00038},
+                    PDF = {https://hal.inria.fr/hal-03005319v2/file/Smartwatch_Survey.pdf},
+                    HAL_ID = {hal-03005319},
+                    HAL_VERSION = {v2},
+                    pages = {},
+                  }
+            </pre>
+        </div>
+    </div>
+  </section>
+
+  <!--==========================================
+             Projects
+===========================================-->
+<section id="blog" class="section">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-pencil-square"></i>PROJECTS</h4>
+        </div>
+        <div id="blog-card" class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="card">
+                    <!--BLOG ODD-->
+                    <div class="blog odd">
+                        <!--IMAGE-->
+                        <div class="image">
+                            <img alt="blog-image" src="images/infovis.png"/>
+                            <div class="image-overlay"></div>
+                        </div>
+                        <!--DETAILS-->
+                        <div class="content">
+                            <ol class="breadcrumb">
+                                <li class="active">Interaction</li>
+                                <li class="active">Selection technique</li>
+                                <li class="active">Smartwatch</li>
+                            </ol>
+                            <h3>Smart watch interaction</h3>
+                            <!-- <h6>Smart watch interaction</h6> -->
+                            <p>
+                                This project represents two modalities for interaction with small display  
+                                in order to show how to interact with bar chart for time series data on smarwatch display.
+                                This prototype was made for InfoVis course project, 2020. Université Paris-Saclay. 
+                            </p>
+                            <!-- <a href="#">Read More</a> -->
+                        </div>
+                    </div>
+                    <!--BLOG EVEN-->
+                    <div class="blog even">
+                        <!--IMAGE-->
+                        <div class="image">
+                            <img alt="blog-image" src="images/point_cloud.png"/>
+                            <div class="image-overlay"></div>
+                        </div>
+                        <!--DETAILS-->
+                        <div class="content">
+                            <ol class="breadcrumb">
+                                <li class="active">Point cloud interaction</li>
+                                <li class="active">3D points selection</li>
+                                <li class="active">R & D</li>
+                            </ol>
+                            <h3>3D point cloud selection</h3>
+                            <p>
+                              During my master thesis internship in CEA Tech we proposed and implemented four selection techniques for 3D point cloud. This project was part of CEA in colaboration with cyber security department.
+                            </p>
+                            <!-- <a href="#">Read More</a> -->
+                        </div>
+                    </div>
+                    <!--BLOG ODD-->
+                    <div class="blog odd">
+                        <!--IMAGE-->
+                        <div class="image">
+                            <img alt="blog-image" src="images/gender_project.png"/>
+                            <div class="image-overlay"></div>
+                        </div>
+                        <!--DETAILS-->
+                        <div class="content">
+                            <ol class="breadcrumb">
+                                <li class="active">HCI Exhibition 2019</li>
+                                <li class="active">AR</a></li>
+                                <li class="active">Gender Project</li>
+                            </ol>
+                            <h3>Gender Project</h3>
+                            <p>
+                              This AR based project was made for the HCI Exhibition 2019, Université Paris-Saclay.
+                              We showed social pressure on gender preferences using AR.
+                               <!-- This project was highly appreciated.  -->
+                              <!-- It was one of the most enjoyable projects I have been involved with. -->
+                            </p>
+                         
+                        </div>
+                    </div>
+                       <!--BLOG EVEN-->
+                       <div class="blog even">
+                        <!--IMAGE-->
+                        <div class="image">
+                            <img alt="blog-image" src="images/colab_shopping.png"/>
+                            <div class="image-overlay"></div>
+                        </div>
+                        <!--DETAILS-->
+                        <div class="content">
+                            <ol class="breadcrumb">
+                                <li class="active">CSCW</li>
+                                <li class="active">Prototype</li>
+                                <li class="active">Mobile or tablet</li>
+                            </ol>
+                            <h3>AR based shopping</h3>
+                            <p>
+                                Another AR based project for real time collaborative shoping. This was a fun project for CSCW course work.
+                              
+                            </p>
+                        </div>
+                    </div>
+                      <!--BLOG ODD-->
+                      <div class="blog odd">
+                        <!--IMAGE-->
+                        <div class="image">
+                            <img alt="blog-image" src="images/bootcamp.png"/>
+                            <div class="image-overlay"></div>
+                        </div>
+                        <!--DETAILS-->
+                        <div class="content">
+                            <ol class="breadcrumb">
+                                <li class="active">Interaction techniques</li>
+                                <li class="active">Prototype</li>
+                                <li class="active">Mobile or tablet</li>
+                            </ol>
+                            <h3>Interaction with Map</h3>
+                            <p>
+                                Video Prototype "Reify people’s physical real-time locations on a whereabouts clock"
+                            </p>
+                            <!-- <a href="#">Read More</a> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!--==========================================
                    EDUCATION
 ===========================================-->
@@ -391,7 +558,7 @@
 <!--==========================================
                    SKILLS
 ===========================================-->
-<section id="skills" class="section">
+<!-- <section id="skills" class="section">
     <div class="container">
         <div class="section-title">
             <h4 class="text-uppercase text-center"><i class="title-icon fa fa-sliders"></i>Skills</h4>
@@ -488,7 +655,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!--==========================================
                    EXPERIENCE
@@ -537,7 +704,7 @@
                 <div class="card timeline-content">
                     <div class="card-content">
                         <!-- TIMELINE TITLE -->
-                        <h6 class="timeline-title">Volunteer </h6>
+                        <h6 class="timeline-title">Event coordinator </h6>
                         <!-- TIMELINE TITLE INFO -->
                         <div class="timeline-info">
                             <h6>
@@ -545,7 +712,7 @@
                             </h6>
                            
                         </div>
-                        <p>May 2020 - Present <br>Paris-Saclay, France
+                        <p>May 2020 - Dec 2020 <br>Paris-Saclay, France
                             <div class="clearfix"></div>
                         </p>
                        
@@ -943,136 +1110,6 @@
 
 
 
-
-<!--==========================================
-             PUBLICATIONS
-===========================================-->
-<section id="blog" class="section">
-    <div class="container">
-        <!-- SECTION TITLE -->
-        <div class="section-title">
-            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-pencil-square"></i>RECENT PROJECTS</h4>
-        </div>
-        <div id="blog-card" class="row">
-            <div class="col-md-12 col-sm-12">
-                <div class="card">
-                    <!--BLOG ODD-->
-                    <div class="blog odd">
-                        <!--IMAGE-->
-                        <div class="image">
-                            <img alt="blog-image" src="images/infovis.png"/>
-                            <div class="image-overlay"></div>
-                        </div>
-                        <!--DETAILS-->
-                        <div class="content">
-                            <ol class="breadcrumb">
-                                <li class="active">Interaction</li>
-                                <li class="active">Selection technique</li>
-                                <li class="active">Smartwatch</li>
-                            </ol>
-                            <h6>Smart watch chart interaction</h6>
-                            <p>
-                                This is a web based prototype showing two methods to select a tiny bar chart from a smartwatches watch face.
-                                I made this prototype for InfoVis course project, 2020. Université Paris-Saclay. 
-                            </p>
-                            <!-- <a href="#">Read More</a> -->
-                        </div>
-                    </div>
-                    <!--BLOG EVEN-->
-                    <div class="blog even">
-                        <!--IMAGE-->
-                        <div class="image">
-                            <img alt="blog-image" src="images/point_cloud.png"/>
-                            <div class="image-overlay"></div>
-                        </div>
-                        <!--DETAILS-->
-                        <div class="content">
-                            <ol class="breadcrumb">
-                                <li class="active">Point cloud interaction</li>
-                                <li class="active">3D points selection</li>
-                                <li class="active">R & D</li>
-                            </ol>
-                            <h6>Selection techniques for 3D point cloud</h6>
-                            <p>
-                               As a part of my master thesis we proposed and implemented a solution for CEA in colaboration with cyber security department
-                               during my 6 months internship in CEA Tech. We implemented 4 selection techniques for 3D point cloud selection. From scratch to implementation
-                               I was involved in this project.
-                            </p>
-                            <!-- <a href="#">Read More</a> -->
-                        </div>
-                    </div>
-                    <!--BLOG ODD-->
-                    <div class="blog odd">
-                        <!--IMAGE-->
-                        <div class="image">
-                            <img alt="blog-image" src="images/gender_project.png"/>
-                            <div class="image-overlay"></div>
-                        </div>
-                        <!--DETAILS-->
-                        <div class="content">
-                            <ol class="breadcrumb">
-                                <li class="active">HCI Exhibition 2019</li>
-                                <li class="active">AR</a></li>
-                                <li class="active">Gender Project</li>
-                            </ol>
-                            <h6>Gender Project</h6>
-                            <p>
-                              Along with my team, we made this AR based project for HCI Exhibition 2019, Université Paris-Saclay.
-                              We showed social pressure on gender preferences using AR.
-                               Our project was highly appreciated and ranked top.
-                              It was one of the most enjoyable projects I have been involved with.
-                            </p>
-                         
-                        </div>
-                    </div>
-                       <!--BLOG EVEN-->
-                       <div class="blog even">
-                        <!--IMAGE-->
-                        <div class="image">
-                            <img alt="blog-image" src="images/colab_shopping.png"/>
-                            <div class="image-overlay"></div>
-                        </div>
-                        <!--DETAILS-->
-                        <div class="content">
-                            <ol class="breadcrumb">
-                                <li class="active">CSCW</li>
-                                <li class="active">Prototype</li>
-                                <li class="active">Mobile or tablet</li>
-                            </ol>
-                            <h6>Collaborating shopping with AR</h6>
-                            <p>
-                                This prototype is for real time collaborating shoping using AR interaction.
-                            </p>
-                        </div>
-                    </div>
-                      <!--BLOG ODD-->
-                      <div class="blog odd">
-                        <!--IMAGE-->
-                        <div class="image">
-                            <img alt="blog-image" src="images/bootcamp.png"/>
-                            <div class="image-overlay"></div>
-                        </div>
-                        <!--DETAILS-->
-                        <div class="content">
-                            <ol class="breadcrumb">
-                                <li class="active">Interaction techniques</li>
-                                <li class="active">Prototype</li>
-                                <li class="active">Mobile or tablet</li>
-                            </ol>
-                            <h6>Real time google map interaction prototype</h6>
-                            <p>
-                                Video Prototype "Reify people’s physical real-time locations on a whereabouts clock"
-                            </p>
-                            <!-- <a href="#">Read More</a> -->
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!--==========================================
                    INTEREST
 ===========================================-->
@@ -1085,14 +1122,14 @@
 
         <div id="interest-card" class="card">
             <!--INTEREST TEXT-->
-            <div class="card-content">
+            <!-- <div class="card-content">
                 <p>
                     I spend quite a lot of time in traveling and photography, these keeps me fresh for working environment.
-                    I love music, folk and country music are my favorite. I Love watching
+                   I love music, folk and country music are my favorite. I love watching
                     movies and reading books. 
-                    I also spend time learning new languages.
+                    I also spend time learning new languages. 
                 </p>
-            </div>
+            </div> -->
 
             <!--INTEREST ICONS-->
             <div class="row no-gutters">
@@ -1150,6 +1187,7 @@
         </div>
     </div>
 </section>
+
 
 
 <!--==========================================
@@ -1245,8 +1283,8 @@
 <script src="javascript/retina.min.js"></script>
 <script src="javascript/scrollreveal.min.js"></script>
 <script src="javascript/jquery.touchSwipe.min.js"></script>
+<script src="javascript/bib-list-min.js"></script>
 <script src="javascript/custom.js"></script>
-
 
 </body>
 </html>
